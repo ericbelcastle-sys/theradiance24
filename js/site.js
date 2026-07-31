@@ -9,7 +9,7 @@
 
   // scroll reveal (respects reduced motion via CSS)
   var items = document.querySelectorAll(
-    ".building__intro, .facts__item, .plan, .amenity-list li, .neighborhood__text, .neighborhood__map, .section__head, .gallery__section, .gallery__item"
+    ".building__intro, .facts__item, .plan, .amenity-list li, .neighborhood__text, .neighborhood__map, .section__head, .gallery__section, .gallery__item, .avail__card"
   );
   items.forEach(function (el) { el.classList.add("reveal"); });
 
