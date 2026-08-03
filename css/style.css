@@ -85,12 +85,15 @@ h1,h2,h3{font-family:var(--serif);line-height:1.1;font-weight:600}
 .hero__inner{
   position:relative;max-width:var(--maxw);margin:0 auto;
   padding:6.5rem 1.25rem 7rem;
+  display:grid;grid-template-columns:1.15fr .85fr;gap:2.5rem;align-items:center;
 }
 .hero .eyebrow{color:var(--gold-soft)}
 .hero__title{font-size:clamp(2.6rem,6vw,4.6rem);margin:.4rem 0 1.2rem;letter-spacing:-.01em}
 .hero__title em{color:var(--gold-soft);font-style:italic}
 .hero__lede{max-width:46ch;font-size:1.12rem;color:rgba(246,241,231,.86)}
 .hero__actions{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2rem}
+.hero__photo{margin:0;align-self:center;justify-self:end;border-radius:var(--radius);overflow:hidden;border:1px solid rgba(246,241,231,.22);box-shadow:0 18px 46px rgba(0,0,0,.35)}
+.hero__photo img{width:100%;max-width:420px;height:320px;object-fit:cover;display:block}
 
 /* BUILDING */
 .building{

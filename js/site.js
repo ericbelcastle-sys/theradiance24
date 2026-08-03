@@ -124,7 +124,7 @@
   // Interior gallery (grouped by room type)
   var grid = document.getElementById("galleryGrid");
   if (grid) {
-    SECTIONS.forEach(function (s) {
+    SECTIONS.forEach(function (s, idx) {
       var sec = document.createElement("div");
       sec.className = "gallery__section reveal";
 
@@ -135,7 +135,7 @@
 
       var g = document.createElement("div");
       g.className = "gallery__grid";
-      buildGallery(g, "gallery", { imgs: s.imgs, caption: "The Radiance " + s.title });
+      buildGallery(g, "gallery" + idx, { imgs: s.imgs, caption: "The Radiance " + s.title });
       sec.appendChild(g);
       grid.appendChild(sec);
     });
